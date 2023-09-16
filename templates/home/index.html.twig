@@ -1,20 +1,156 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{title}}{% endblock %}
+{% block title %}
+	{{title}}
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<!-- Slide -->
+	<div class="background w-100 h-100 d-flex align-items-center justify-content-center">
+		<section id="slide ">
+			<div class="text-center text-white">
+				<h1 class="text-uppercase fw-bold">V.Parrot</h1>
+				<p class="">Gage de qualité par des spécialistes polyvalents</p>
+				<div class="">
+					<a href="" class="text-uppercase btn red-bg text-white me-2">Qui sommes-nous ?</a>
+					<a href="" class="text-uppercase btn red-bg text-white">Contacter le garage</a>
+				</div>
+			</div>
+		</section>
+	</div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	<!-- Presentation -->
+	<section class="container py-5" id="presentation">
+		<div class="row align-items-md-stretch d-flex justify-content-center">
+			<div class="img-presentation col-lg-6 col-12">
+				<img class="img-fluid" src="media/garage.png" alt="">
+			</div>
+			<div class="txt-presentation col-lg-6 col-12 align-self-center pt-2">
+				<h2 class="darkBlue">V.PARROT, Votre expert pour l’entretien et la réparation de votre véhicule</h2>
+				<p>Hac habitasse platea dictumst quisque vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.
+					<br><br>
+					Mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta
+					<strong>lorem mollis aliquam ut porttitor leo a diam sollicitudin</strong>
+					tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl suspendisse potenti nullam ac tortor vitae.
+				</p>
+			</div>
+		</div>
+	</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/omeyma/Documents/Symfony/VParrot/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/omeyma/Documents/Symfony/VParrot/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<!-- Services -->
+	<section class="py-5" id="services">
+		<div class="container">
+			<h2 class="darkBlue">Confiez-nous votre véhicule, on s’occupe de tout !</h2>
+			<p>Pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilis.</p>
+
+			<div class="row">
+				<div class="col-lg-4 col-6">
+					<div class="blue-bg rounded p-4 text-white">
+						<h3>Carosserie</h3>
+						<p>Pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed.
+						</p>
+						<a href="{{path('services_carosserie')}}" class="btn darkBlue-bg text-white">En savoir plus</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="blue-bg rounded p-4 text-white">
+						<h3>Entretien & Révision</h3>
+						<p>Pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed.
+						</p>
+						<a href="{{path('services_entretien_revision')}}" class="btn darkBlue-bg text-white">En savoir plus</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="blue-bg rounded p-4 text-white">
+
+						<h3>Mécanique</h3>
+						<p>Pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed.
+						</p>
+						<a href="{{path('services_mecanique')}}" class="btn darkBlue-bg text-white">En savoir plus</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Vehicules d'occasion -->
+	<section class="py-5" id="vehicules">
+		<div class="container">
+			<h2 class="red">Nos derniers véhicules d’occasion</h2>
+			<p>Pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilis.</p>
+
+			<div class="row"></div>
+
+			<div class="text-center">
+				<a href="">Voir tous les véhicules d'occasion</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Engagement -->
+	<section class="container py-5" id="engagement">
+		<div class="row my-3 d-flex align-items-center text-center">
+			<div class=" col-lg-3 col-6">
+				<img src="/media/reseau-proximite.png" alt="Réseau de proximité">
+				<h4 class="red mt-2">Réseau de proximité</h4>
+			</div>
+
+			<div class="col-lg-3 col-6">
+				<img src="/media/pro-experimente.png" alt="Professionnels expérimentés">
+				<h4 class="red mt-2">Professionnels expérimentés</h4>
+			</div>
+
+			<div class="col-lg-3 col-6">
+				<img src="/media/revision-constructeur.png" alt="Révision constructeur">
+				<h4 class="red mt-2">Révision constructeur</h4>
+			</div>
+
+			<div class="col-lg-3 col-6">
+				<img src="/media/qualite-prix.png" alt="">
+				<h4 class="red mt-2">Qualité au meilleur prix</h4>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Avis client -->
+	<section class="py-5" id="reviews">
+		<div class="container">
+			<h2 class="darkBlue">Ce que nos clients disent de nous</h2>
+			<p class="mb-4">"Pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilis.</p>
+
+			<div class="row">
+				<div class="col-lg-4 col-6">
+					<div class="p-4 mb-4 lightBlue-bg rounded">
+						<h4 class="blue fw-bold">Parfait, je recommande !</h4>
+						<p>Olivia</p>
+						<p>Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-6">
+					<div class="p-4 mb-4 lightBlue-bg rounded">
+						<h4 class="blue fw-bold">J'adore ma nouvelle voiture !</h4>
+						<p>Laurent</p>
+						<p>Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-6">
+					<div class="p-4 mb-4 lightBlue-bg rounded">
+						<h4 class="blue fw-bold">Bon rapport qualité prix.</h4>
+						<p>Thomas</p>
+						<p>Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mb-4">
+				<a href="">Donner mon avis</a>
+			</div>
+		</div>
+	</section>
+
 {% endblock %}

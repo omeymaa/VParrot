@@ -1,11 +1,49 @@
 .blue-bg {
-    background-color: blue;
+    background-color: #233160;
+}
+
+.blue {
+    color: #233160;
 }
 
 .darkBlue {
     color: #14152D;
 }
 
+
 .darkBlue-bg {
     background-color: #14152D;
+}
+
+.lightBlue-bg {
+    background-color: hsl(238, 38%, 13%, 10%);
+
+}
+
+.red {
+    color: #CD0C0C;
+}
+
+.red-bg {
+    background-color: #CD0C0C;
+}
+
+.background {
+    background: url('../media/reparation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 90vh;
+}
+
+#services {
+    background-color: hsl(238, 38%, 13%, 10%);
+}
+
+#vehicules {
+    background-color: hsl(0, 89%, 43%, 5%);
+}
+
+h2 {
+    font-weight: 700;
 }

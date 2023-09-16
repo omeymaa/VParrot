@@ -18,7 +18,7 @@ class ServicesController extends AbstractController
     }
 
     #[Route('/entretien-revision', name: 'services_entretien_revision')]
-    public function entretien_revision(): Response
+    public function entretienRevision(): Response
     {
         return $this->render('services/index.html.twig', [
             'controller_name' => 'ServicesController',

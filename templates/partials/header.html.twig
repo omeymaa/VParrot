@@ -1,15 +1,14 @@
 <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <header class="d-flex flex-wrap align-items-center py-3">
+      <a href="{{path('app_home')}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
          <img width="250"  src="{{asset("media/logo-vparrot.png")}}" alt="Logo V.Parrot">
       </a>
 
-      <ul class="nav nav-pills text-uppercase">
-        <li class="nav-item "><a href="#" class="nav-link active darkBlue px-2" aria-current="page">Home</a></li>
+      <ul class="nav nav-pills text-uppercase fw-bold">
         <li class="nav-item"><a href="#" class="nav-link darkBlue px-2">Le Garage</a></li>
-        <li class="nav-item"><a href="#" class="nav-link darkBlue px-2">Carosserie</a></li>
-        <li class="nav-item"><a href="#" class="nav-link darkBlue px-2">Entretien & Révision</a></li>
-        <li class="nav-item"><a href="#" class="nav-link darkBlue px-2">Mécanique</a></li>
+        <li class="nav-item"><a href="{{path('services_carosserie')}}" class="nav-link darkBlue px-2">Carosserie</a></li>
+        <li class="nav-item"><a href="{{path('services_entretien_revision')}}" class="nav-link darkBlue px-2">Entretien & Révision</a></li>
+        <li class="nav-item"><a href="{{path('services_mecanique')}}" class="nav-link darkBlue px-2">Mécanique</a></li>
         <li class="nav-item"><a href="#" class="nav-link darkBlue px-2">Véhicules d'occasion</a></li>
         <li class="nav-item"><a href="#" class="nav-link darkBlue ps-2 pe-0">Contact</a></li>
       </ul>
